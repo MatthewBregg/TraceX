@@ -1,7 +1,45 @@
-.nav-button {
-    width : 33%;
+.navbutton {
+    width : 100%;
+    position: relative;
+}
+
+.nav {
+    height : 100%;
+    width : 100%;
+    position:absolute;
+    background-color: salmon;
+}
+
+.navbutton:hover {
 }
 
 .nav {
     background-color : teal;
+}
+
+.reference {
+    background-color : blue;
+    left: 33.3%;
+}
+.presentations {
+    background-color : green;
+    left: 66.6%;
+}
+.team_members {
+    background-color : red;
+    left:0%;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.reference, .presentations, .team_members {
+    position:absolute;
+    width: 33.3%;
+    height: 100%;
+    color:white;
+    font-size: 6em;
+    text-align:center;
 }
