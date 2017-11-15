@@ -1,13 +1,59 @@
-<h1> Insert References here! </h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>references</title>
+	<style>
+		body {
+			background-image: url(images/10print_fade-000000.png);
+			font-family: "Courier New", Courier, Arial, sans-serif;
+		}
 
- <ol>
-  <li><a href="http://graphics.stanford.edu/courses/Appel.pdf"> Some techniques for shading machine renderings of solids by Arthur Appel (1968). This paper presents the first ray casting algorithm used for rendering objects in a scene. </a></li>
+		.container{
+			clear: both;
+			display: grid;
+			grid-gap: 1em;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: minmax(200px, auto);
+		}
 
-  <li><a href="https://excelsior.asc.ohio-state.edu/~carlson/history/tree/magi.html"> MAGI (Mathematical Applications Group, Inc.) used ray casting to trace radiation from the source to the surrounding environment. This software was eventually adapted for use in CGI, becoming one of the first implementations of ray tracing used to generate images. Later, MAGI used this software to create scenes in the movie Tron (1982).  </a></li>
+		.container > div{
+			background: #EEEEEE;
+			padding: 1em;
+			border-radius: 5px;
+		}
 
-  <li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.107.3997&rep=rep1&type=pdf"> An Improved Illumination Model for Shaded Display by Turner Whitted (1980). This paper introduces a recursive ray tracing algorithm. When a ray intersects an object, it may generate up to three more rays which are used to simulate reflection, refraction, and shadows. This algorithm is more expensive than its predecessors, but it results in very realistic images. </a></li>
- 
-  <li><a href="https://www.youtube.com/watch?v=Ahp6LDQnK4Y"> A Lecture at UC Davis going over ray tracing. </a></li>
-  <li><a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-overview"> A site with some useful diagrams to explain ray tracing. </a> </li>
-  <li><a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"> Overall explanation of RayTracing, but also lots of useful example of ray traced images </a> </li>
-</ol> 
+		.container > div:nth-child(odd){
+			background: #DDDDDD;
+		}
+	</style>
+</head>
+	<body>
+		<div class="container">
+
+		 	<div>
+				<a href="http://graphics.stanford.edu/courses/Appel.pdf"> Some techniques for shading machine renderings of solids by Arthur Appel (1968) </a>
+			</div>
+
+			<div>
+				<a href="https://excelsior.asc.ohio-state.edu/~carlson/history/tree/magi.html"> MAGI (Mathematical Applications Group, Inc.) </a>
+			</div>
+			
+			<div>
+				<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.107.3997&rep=rep1&type=pdf"> An Improved Illumination Model for Shaded Display by Turner Whitted (1980) </a>
+			</div>
+			
+			<div>
+				<a href="https://www.youtube.com/watch?v=Ahp6LDQnK4Y"> A Lecture at UC Davis going over ray tracing. </a>
+			</div>
+
+			<div>
+				<a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-overview"> A site with some useful diagrams to explain ray tracing. </a>
+			</div>
+
+			<div>
+				<a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)"> Overall explanation of RayTracing, but also lots of useful example of ray traced images </a>
+			</div>
+
+		</div>
+	</body>
+</html>
