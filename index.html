@@ -1,37 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CAP3027 - TraceX - Home</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+<html>
+	<head>
+		<title>references</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Courier New", Courier, Arial, sans-serif;
+			}
+			.nav {
+				margin-top: -1em;
+				background-color: #555555;
+				color: #FFFFFF; 
+				list-style: none;
+				text-align: center;
+			}
 
-    <h1 class="header">
-      Topic: Ray Tracing
-    </h1>
-    <img class="header" src="./tracex.png" width="120" height="80" alt="Natural" />
+			.nav > ul > li {
+				display: inline-block;
+				line-height: 50px;
+				height: 50px;
+				padding: 0 30px 0 30px
+			}
 
-    <div class="nav">
-      <a href="./reference.html">
-        <div class="reference">
-	  References!
-        </div>
-      </a>
-      <a href="./presentations.html">
-        <div class="presentations">
-	  Presentations!
-        </div>
-      </a>
-      <a href="./team_members.html">
-        <div class="team_members">
-	  Team!
-        </div>
-      </a>
-    </div>
-  </body>
+			.nav > ul > li > a {
+				text-decoration: none;
+				color: #DDDDDD;
+			}
+
+			.nav > ul > li:hover {
+				background-color: #444444;
+			}
+
+			.nav > ul > li > a:hover {
+				color: #FFFFFF;
+			}
+
+			#icon {
+				background-color: #FFFFFF;
+			}
+
+			.description {
+				margin: 1em;
+			}
+
+			.description > h1 {
+				margin: 50px 0 0 50px;
+			}
+
+			.description > p {
+				margin: 25px 0 0 50px;
+				max-width: 500px;
+			}
+
+			html { 
+			  background: url(./images/glass_raytracing.png) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			}
+			
+			footer {
+				position: absolute;
+				right: 100px;
+				bottom: 0;
+				left: 0;
+				padding: 1rem;
+				text-decoration: none;
+				text-align: right;
+			}
+
+			footer > a {
+				color: #000000;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="nav">
+			<ul>
+				<li id="icon">
+					<a href="./index.html"> <img src="./tracex.png" width="100px" ></a>
+				</li>
+
+				<li>
+					<a href="./reference.html">references</a>
+				</li>
+
+				<li>
+					<a href="./presentations.html">presentations</a>
+				</li>
+
+				<li>
+					<a href="./team_members.html">team members</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="description">
+			<h1>Ray Tracing:</h1>
+			<p>An image rendering technique that traces the path of light through a plane of pixels into a virtual scene and simulates how the light interacts with the objects in the scene</p>
+		</div>
+
+	</body>
+
+	<footer>
+		<a class="image_credit" href="http://www.ollie-odonnell.com/cs184-proj3">image by Ollie O'Donnell</a>
+	</footer>
+</html>
