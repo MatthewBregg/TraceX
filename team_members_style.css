@@ -1,6 +1,40 @@
 body {
+	padding: 0;
+	margin: 0;
 	background-image: url(images/10print_fade-000000.png);
 	font-family: "Courier New", Courier, Arial, sans-serif;
+}
+
+.nav {
+		margin-top: -1em;
+		background-color: #555555;
+		color: #FFFFFF; 
+		list-style: none;
+		text-align: center;
+}
+
+.nav > ul > li {
+	display: inline-block;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 30px 0 30px
+}
+
+.nav > ul > li > a {
+	text-decoration: none;
+	color: #DDDDDD;
+}
+
+.nav > ul > li:hover {
+	background-color: #444444;
+}
+
+.nav > ul > li > a:hover {
+	color: #FFFFFF;
+}
+
+#icon {
+	background-color: #FFFFFF;
 }
 
 .bio {
@@ -16,14 +50,17 @@ body {
 }
 
 .bio h2 {
+	padding: 10px;
 	text-align: center;
 }
 
 .headshot {
-	align-content: center;
-	width: 350;
+	text-align: center;
+
+	margin: 0px 0px 25px 25px;
+	vertical-align: middle;
+	width: 300;
 	float: left; 
-	margin-bottom: 50px;
 }
 
 .headshot img {
@@ -32,14 +69,14 @@ body {
     height: 300px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
 }
 
 .description {
+	padding: 10px;
+	text-align: left;
 	border-radius: 5px;
 	background-color: #999999;
 	width: 350px;
-	align-content: center;
 	padding: 10;
 	float: right;
 	margin-right: 20px; 
